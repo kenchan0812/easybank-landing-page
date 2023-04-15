@@ -1,5 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* navbar */
+.navbar{
+    background-color: black;
+    height: 70px
+}
+
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul a{
+    color: hsl(233, 8%, 62%);
+    padding: 10px;
+    margin: 15px;
+}
+
+
+
+.inv_btn a{
+    color: #fff;
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%) );
+    padding: 15px 30px;
+    border-radius: 2em; 
+    font-weight: 700;
+}
+
+/* showcase */
+
+.showcase{
+    height: 800px;
+    overflow: hidden;
+} 
+
+.showcase .grid{
+    gap: 100px;
+}
+
+.showcase .bg{
+margin-top: -10em;
+z-index: -2;
+
+}
+
+.showcase .mobile{
+    margin-top: -15em;
+    z-index: -1;
+
+}
+
+.showcase_left p{
+    margin:2em 0;
+}
+
+
+
+
+
+
+
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    height: 100%;
 }
